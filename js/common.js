@@ -103,16 +103,10 @@ $(function(){
 
 /*---------[• wow.js start •]-----------*/
 
-$(function(){
-	 new WOW({
-	 	offset: 100
-	 }).init();
-});
-
 /*---------[• wow.js end •]-----------*/
 
 /*---------[• preloader start •]-----------*/
-$(window).ready(function() {
+$(document).ready(function() {
 	$(".page-loader-circle").fadeOut(); 
 	$(".preloader").delay(400).fadeOut("slow"); 
 });
