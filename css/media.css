@@ -1,0 +1,133 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+@media only screen and (min-width : 992px) {
+	.header_top-line .navigation {
+		display: flex !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header_top-line {
+		padding: 10px 0; 
+	}
+	
+	.header_top-line.shrink {
+		padding: 5px 0;
+	}
+
+	.header_top-line .toggle-menu {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.header_top-line .navigation {
+		display: none;
+		justify-content: flex-end;
+		width: 100%;
+		position: absolute;
+		top:100%;
+		left: 0px;
+		background: white;
+		color: black;
+		height: 245px;
+		overflow-y: auto;
+		-webkit-box-shadow: 0 9px 13px -10px #000;
+       	-moz-box-shadow: 0 9px 13px -10px #000;
+        box-shadow: 0 9px 13px -10px #000;
+        background-color: rgba(0, 0, 0, 0.75);
+        
+	}
+
+	.header_top-line .navigation a {
+		color: white;
+	}
+
+	.header_top-line .navigation a:hover {
+		background: rgba(0, 0, 0, 0.85);
+	}
+
+	.navigation .navigation-item {
+		padding: 15px;
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
+
+	.navigation .navigation-item::after {
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.header-content .title {
+		font-size: 32px;
+		
+	}
+
+	.header-content .description {
+		font-size: 16px;
+	}
+
+	.service-list_item:hover {
+		transform: translateY(0%);
+	}
+}
+
+@media only screen and (max-width : 575px) {
+	.about-us,
+	.links_title,
+	.find-us_title,
+	.subscribe_title {
+		text-align: center;
+	}
+
+	.about-us_text {
+		text-align: justify;
+	}
+
+	.links_lists {
+		justify-content: center;
+	}	
+
+	.lists_item:first-child {
+		margin-right: 70px;
+	}
+
+	.find-us_social-links {
+		justify-content: center;
+	}
+
+	
+	.wrap_form_text-field {
+		//max-width: none;
+		margin: 0 auto;
+	}
+
+	.form_button {
+		margin: 0 auto;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	
+	
+}
